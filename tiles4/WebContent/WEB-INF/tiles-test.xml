@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="common" template="/inc/layout.jsp">
+		<put-attribute name="title" value="타일즈라이브러리 이용하기" />
+		<put-attribute name="header" value="/inc/header.jsp" />
+		<put-attribute name="aside" value="/inc/aside.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/inc/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="common">
+		<put-attribute name="body" value="/home.jsp" />
+	</definition>
+	
+	<definition name="info" extends="common">
+		<put-attribute name="body" value="/info.jsp" />
+	</definition>
+	
+<!-- 	<definition name="info2" extends="common"> -->
+<!-- 		<put-attribute name="body" value="/info1.jsp" /> -->
+<!-- 	</definition> -->
+
+</tiles-definitions>
+
